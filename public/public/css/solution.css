@@ -1,0 +1,21 @@
+/* .solution_img  {
+    position: relative;
+}
+.solution_content h3, p {
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    top: 65px;
+    left: 185px;    
+} */
+.solution_background {
+    background-image: url("/assets/images/background.png");
+    color: #000;
+    font-weight: bold;
+}
+.solution_content h3 {
+    color: #fff;
+}
+.solution_content p {
+    font-size: 15px;
+}

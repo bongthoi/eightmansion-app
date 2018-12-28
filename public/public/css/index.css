@@ -1,0 +1,113 @@
+body {
+    font-family:Times New Roman;
+    font-weight: bold;
+    
+}
+.background-image{
+    background-image: url("/assets/images/BAT_TRACH_PHONG_THUY.png");
+}
+.container{
+    padding-right:0px !important;
+    padding-left: 15px !important;
+}
+header img {
+    margin: 5px;
+}
+.content_Feng_Shui {
+    margin-left: -125px !important;
+}
+.nav_background {
+    background: #11233b;
+    border: none;
+}
+.navbar-inverse {
+    border: none;
+}
+.content_Feng_Shui .cl {
+    margin-left: 3px;
+    height: 2px;
+    border: 3px solid yellow;
+    width: 15%;
+}
+.content_Feng_Shui .cl_green {
+    border: 3px solid #006600;
+}
+.content_Feng_Shui .cl_blue {
+    border: 3px solid #0000ff;
+}
+.content_Feng_Shui .cl_red {
+    border: 3px solid #ff0000;
+}
+.content_Feng_Shui .cl_brown {
+    border: 3px solid #996633;
+}
+.content_Feng_Shui_cl {
+    margin: 27px 0;
+}
+.content_Feng_Shui h3 {
+    
+    font-size: 22px;
+    padding: 4px;
+    color:#0000ff;
+    font-weight: bold;
+}
+/* .content_Feng_Shui .content_forms {
+    float: right;
+} */
+.content_Feng_Shui .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+}
+.content_Feng_Shui .form-control:focus {
+    box-shadow: none;
+}
+.content_Feng_Shui label {
+    font-size: 18px;
+    font-weight: 500;
+}
+.content_Feng_Shui span {
+    font-size: 14px;
+}
+.content_forms {
+    margin-top: 20px;
+}
+.content_right_img img {
+    margin-top: -50px;
+    margin-left: -20px;
+}
+#bornyear, #gender, #direction {
+    text-align: center;
+    border-radius: 15px;
+    font-size: 17px;
+    padding: 4px;
+}
+select:focus, button:focus {
+    outline: none;
+}
+.button button {
+    border-radius: 15px;
+    border: 1px solid #000;
+    font-size: 18px;
+    background: #000;
+    color: #fff;
+    padding: 2px 10px;
+}
+.form-group {
+    line-height: 40px;
+}
+.form-control {
+    height: 20px;
+    width: 350px;
+}
+.footer_background {
+ background: #11233b;
+ margin-top: 10px;
+ color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+    .content_right_img img {
+        display: none;
+    }
+  }

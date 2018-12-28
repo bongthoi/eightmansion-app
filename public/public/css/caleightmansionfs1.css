@@ -1,0 +1,29 @@
+/* #charset "UTF-8" */
+
+html, body, footer, header {
+	padding:0;
+	margin:0;
+}
+
+footer, header{
+	display: block;
+}
+
+body{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #f0f0f0;
+	font-size:18px;
+}
+
+.banner{
+	background-color: #11233b;
+	color:white;
+	padding: 10px 20px;
+}
+
+
+footer{
+	clear:both;
+}

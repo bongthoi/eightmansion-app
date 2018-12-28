@@ -1,0 +1,40 @@
+table, th, td {
+    border: 1px solid black;
+  }
+.content_table td {
+    width: 30%;
+    line-height: 30px;
+    text-align: center;
+}  
+.content_table .table_red {
+    background: red;
+    color: #fff;
+    font-weight: bold;
+}
+.content_table .table_blue {
+    background: #80aaff;
+    color: #000;
+    font-weight: bold;
+}
+.content_table .table_note_red hr {
+    width: 15px;
+    height: 15px;
+    background: red;
+    float: left;
+    margin: 11px;
+}
+.content_table .table_note_blue hr {
+    width: 15px;
+    height: 15px;
+    background: #80aaff;
+    float: left;
+    margin: 11px;  
+}
+.content_table .table_note_red, .table_note_blue {
+    margin-top: 10px;
+}
+.content_table .table_note_red span, .table_note_blue span {
+    margin-left: 5px;
+    font-weight: bold;
+    color: #000;
+}
