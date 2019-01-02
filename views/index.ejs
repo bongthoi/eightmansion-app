@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title><%=title%></title>
+    <title>
+        <%=title%>
+    </title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -20,16 +22,24 @@
         <header>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 xol-md-12">
-                    <img src="/assets/images/logo.png" alt="" width="200px" ; height="auto">
+                    <a href="/"><img src="/assets/images/logo.png" alt="" width="200px" ; height="auto"></a>
                 </div>
             </div>
             <nav class="navbar navbar-inverse">
                 <div class="container-fluid nav_background">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/"></a>
+                    </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="/explanation">Explanation</a></li>
-                            <li><a href="/solution">Solution</a></li>
+                            <li class="active"><a href="/">Trang Chủ</a></li>
+                            <li><a href="/explanation">Giải Trình</a></li>
+                            <li><a href="/solution">Dung Dịch</a></li>
                         </ul>
 
                     </div>
@@ -165,14 +175,14 @@
 
                                     <p>Hướng nhà của bạn:
                                         <select id="direction">
-                                            <option value="NT">BAC</option>
-                                            <option value="NE">DONG BAC</option>
-                                            <option value="ET">DONG</option>
-                                            <option value="SE">DONG NAM</option>
+                                            <option value="NT">BẮC</option>
+                                            <option value="NE">ĐÔNG BẮC</option>
+                                            <option value="ET">ĐÔNG</option>
+                                            <option value="SE">ĐÔNG NAM</option>
                                             <option value="ST">NAM</option>
-                                            <option value="SW">TAY NAM</option>
-                                            <option value="WT">TAY</option>
-                                            <option value="NW">TAY BAC</option>
+                                            <option value="SW">TÂY NAM</option>
+                                            <option value="WT">TÂY</option>
+                                            <option value="NW">TÂY BẮC</option>
                                         </select>
 
                                         <p><input type="button" value="Tính toán " onclick="checkmain()" /></p>
@@ -203,19 +213,20 @@
                                             </tr>
                                         </table>
                                         <div class="content_table">
-                                        <div id="explain2">
-                                            <div class="table_note_red">
-                                                <hr>
-                                                <span>Màu đỏ là may mắn</span>
+                                            <div id="explain2">
+                                                <div class="table_note_red">
+                                                    <hr>
+                                                    <span>Màu đỏ là may mắn</span>
+                                                </div>
+                                                <div class="table_note_blue">
+                                                    <hr>
+                                                    <span>Màu gió sáng là dữ dội</span>
+                                                </div>
                                             </div>
-                                            <div class="table_note_blue">
-                                                <hr>
-                                                <span>Màu gió sáng là dữ dội</span>
-                                            </div>
-                                        </div></div>
+                                        </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
         </div>

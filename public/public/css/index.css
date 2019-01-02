@@ -14,7 +14,7 @@ header img {
     margin: 5px;
 }
 .content_Feng_Shui {
-    margin-left: -125px !important;
+    margin-left: -15px !important;
 }
 .nav_background {
     background: #11233b;
@@ -46,7 +46,7 @@ header img {
 }
 .content_Feng_Shui h3 {
     
-    font-size: 22px;
+    font-size: 21px;
     padding: 4px;
     color:#0000ff;
     font-weight: bold;
@@ -98,7 +98,7 @@ select:focus, button:focus {
 }
 .form-control {
     height: 20px;
-    width: 350px;
+    width: 248px;
 }
 .footer_background {
  background: #11233b;
