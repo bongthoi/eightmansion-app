@@ -1,20 +1,29 @@
 .content_background {
-    background-image: url("/assets/images/background.png");
+    background-image: url("../../assets/images/background.png");
+    width: 100%;
 }
 .content_left  {
     text-align: left;
-    color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
 }
 .content_right  {
     text-align: right;
-    color: #000;
+    color: #fff;
     float: right;
+    font-weight: bold;
+    font-size: 17px;
 }
 .content_right .right h3 {
     margin-right: 15px;
+    color: #fff;
+    font-weight: bold;
 }
 .content_left .left h3 {
     margin-left: 15px;
+    color: #fff;
+    font-weight: bold;
 }
 .content_background .button button {
     margin: 15px;
@@ -24,4 +33,14 @@
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 0px;
+}
+.fix-button #btn {
+    /* width: 10%; */
+    background: #000;
+    color: #fff;
+    font-size: 17px;
+    border: none;
+    border-radius: 15px;
+    padding: 4px 10px;
+    line-height: 25px;
 }

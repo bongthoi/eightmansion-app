@@ -24,21 +24,23 @@ function checkmain(){
 	vmansiondirection = housedirection(vdirection);
 	vmansionqua = housequa(vdirection);
 	var vcheckmatch = checkmatch(vlifedirection, vmansiondirection);
-	document.getElementById("result1").value = "Meng direction la: " + vlifedirection + "; Meng Qua la: " + vlifequa;
-	document.getElementById("result2").value = "Mansion direction la: " + vmansiondirection + "; Mansion Qua la: " + vmansionqua;
+	// document.getElementById("result1").value = "Meng direction la: " + vlifedirection + " ; Meng Qua la: " + vlifequa;
+	// document.getElementById("result2").value = "Mansion direction la: " + vmansiondirection + " ; Mansion Qua la: " + vmansionqua;
+	document.getElementById("result1").value = "Hướng nhà của cung mệnh: " + vlifedirection + " ; Quẻ mệnh: " + vlifequa;
+	document.getElementById("result2").value = "Hướng nhà ở: " + vmansiondirection + " ; Quẻ trạch: " + vmansionqua;
 	document.getElementById("result3").value = vcheckmatch;
-	if(vcheckmatch == "HOP"){
+	if(vcheckmatch == "HỢP"){
 		document.getElementById("result3").style.backgroundColor = "red";
-	}else if(vcheckmatch == "KHONG HOP"){
+	}else if(vcheckmatch == "KHÔNG HỢP"){
 		document.getElementById("result3").style.backgroundColor = "lightblue";
 	}
 	palacecolor(vmansiondirection);
 	//alert(vmansionqua);
 	//配合以宅卦為卦, 不配合以命卦為卦
-	if(vcheckmatch == "HOP"){
+	if(vcheckmatch == "HỢP"){
 		setstars(vmansionqua);
 		palacecolor(vmansionqua);
-	}else if(vcheckmatch == "KHONG HOP"){
+	}else if(vcheckmatch == "KHÔNG HỢP"){
 		setstars(vlifequa);
 		palacecolor(vlifequa);
 	}
@@ -71,9 +73,9 @@ function callife(vyear, vgender){
 function lifedirection (byear){
     var rlife = "";	
     if((byear == "1") || (byear == "3") || (byear == "4") || (byear == "9")){
-      rlife = "Dong";
+      rlife = "Đông";
     }else{
-      rlife = "Tay";
+      rlife = "Tây";
     }	
     return rlife;
 }
@@ -95,9 +97,9 @@ function lifequa(byear, sgender){
 function housedirection(door) {
     var vhousedirection = "";
     if ((door == "NT") || (door == "ST") || (door == "WT") || (door == "NW")){
-       housedirection = "Dong";
+       housedirection = "Đông";
     }else{
-       housedirection = "Tay";
+       housedirection = "Tây";
     }
    return housedirection;
 }
@@ -128,10 +130,10 @@ function housequa(door){
 function checkmatch(ahousediection, alifedirection){
     var matchresult = "";
     if (ahousediection == alifedirection){
-        matchresult = "HOP";
+        matchresult = "HỢP";
         //palacecolor(vhousedirection)
     }else{
-        matchresult = "KHONG HOP";
+        matchresult = "KHÔNG HỢP";
         //palacecolor(vlifediection)
 	}
     return matchresult

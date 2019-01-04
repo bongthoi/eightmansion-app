@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="/public/css/index.css">
     <link rel="stylesheet" type="text/css" href="/public/css/calculater.css">
     <!-- <link rel="stylesheet" type="text/css" href="caleightmansionfs1.css"> -->
-    <script type="text/javascript" src="/public/js/caleightmansionfs1.js"></script>
+    <script type="text/javascript" src="/public/js/caleightmansionfs1_cn.js"></script>
 </head>
 
 <body onload="hide()">
@@ -22,7 +22,7 @@
         <header>
             <div class="row">
                 <div class="col-xs-12 col-sm-12 xol-md-12">
-                    <a href="/"><img src="/assets/images/logo.png" alt="" width="200px" ; height="auto"></a>
+                    <a href="/cn"><img src="/assets/images/logo.png" alt="" width="200px" ; height="auto"></a>
                 </div>
             </div>
             <nav class="navbar navbar-inverse">
@@ -37,10 +37,17 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="/">Trang Chủ</a></li>
-                            <li><a href="/explanation">Giải Trình</a></li>
-                            <li><a href="/solution">Phương Pháp Hóa Giải</a></li>
+                            <li class="active"><a href="/cn">主页</a></li>
+                            <li><a href="/cn/explanation">解释</a></li>
+                            <li><a href="/cn/solution">化解方法</a></li>
                         </ul>
+                        <div class="nav navbar-nav navbar-right">
+                            <ul class="nav navbar-nav navbar-right flag">
+							  <li><a href="/"><span><img src="/assets/images/vn.png"  height="15px" width="20px"></span>| </a></li>							  
+                              <li><a href="/cn"><span><img src="/assets/images/cn.jpg"  height="15px" width="20px"></span>|</a></li>	
+                              <li><a href="/en"><span><img src="/assets/images/en.jpg" height="15px" width="20px"></span></a></li>						  
+                            </ul>
+                        </div>
 
                     </div>
                 </div>
@@ -51,7 +58,7 @@
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="col-md-1"></div>
                     <div class="col-xs-12 col-sm-6 col-md-4">
-                        <h3>NHÀ PHONG THỦY</h3>
+                        <h3>风水屋</h3>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-7 content_Feng_Shui_cl">
                         <div class="col-xs-2 col-sm-2 col-md-2 cl">
@@ -81,18 +88,18 @@
                     <div class="col-xs-12 col-sm-12 col-md-4">
                         <div class="form-group">
                             <span class="glyphicon glyphicon-ok-sign"></span>
-                            <label for="usr">Họ và Tên:</label>
+                            <label for="usr">全名:</label>
                             <input type="text" class="form-control" id="usr">
                         </div>
                         <div class="form-group">
                             <span class="glyphicon glyphicon-ok-sign"></span>
-                            <label for="email">Email:</label>
+                            <label for="email">电子邮件:</label>
                             <input type="email" name="" id="input" class="form-control" value="" required="required"
                                 title="">
 
                         </div>
                         <div class="form-group">
-                            <p>Năm sinh của bạn:
+                            <p>请选择出生年份:
                                 <select id="bornyear">
                                     <option value="1950">1950</option>
                                     <option value="1951">1951</option>
@@ -167,65 +174,66 @@
                                     <option value="2020">2020</option>
                                 </select>
 
-                                <p>Giới tính của bạn:
+                                <p>请选择性别:
                                     <select id="gender">
-                                        <option value="M">Nam</option>
-                                        <option value="F">Nu</option>
+                                        <option value="M">男</option>
+                                        <option value="F">女</option>
                                     </select>
 
-                                    <p>Hướng nhà của bạn:
+                                    <p>请选择门向:
                                         <select id="direction">
-                                            <option value="NT">BẮC</option>
-                                            <option value="NE">ĐÔNG BẮC</option>
-                                            <option value="ET">ĐÔNG</option>
-                                            <option value="SE">ĐÔNG NAM</option>
-                                            <option value="ST">NAM</option>
-                                            <option value="SW">TÂY NAM</option>
-                                            <option value="WT">TÂY</option>
-                                            <option value="NW">TÂY BẮC</option>
+                                            <option value="NT">北</option>
+                                            <option value="NE">東北</option>
+                                            <option value="ET">東</option>
+                                            <option value="SE">東南</option>
+                                            <option value="ST">南</option>
+                                            <option value="SW">西南</option>
+                                            <option value="WT">西</option>
+                                            <option value="NW">西北</option>
                                         </select>
 
-                                        <p><input type="button" value="Tính toán " onclick="checkmain()" /></p>
+                                        <p><input type="button" id="btn" value="計算" onclick="checkmain()" /></p>
                                         <p><input type="text" id="result1" size="50" value="" /></p>
                                         <p><input type="text" id="result2" size="50" value="" /></p>
                                         <p><input type="text" id="result3" size="50" value="" /></p>
                                         <div id="explain">
                                             <!-- <input type="button" value="Giải trình" onclick="showexplain()" /> -->
-                                            <a class="btn btn-primary" href="/explanation">Giải Trình</a>
+                                            <a class="btn btn-primary" id="btn" href="/cn/explanation">解释</a>
                                         </div>
                                         <br>
                                         <table width="300" height="300" style="border:1px #cccccc solid;" cellpadding="5"
                                             border="1">
                                             <tr>
-                                                <td width="33%" id="tnw">Tây Bắc<br /></td>
-                                                <td width="33%" id="tnt">Bắc<br /></td>
-                                                <td width="33%" id="tne">Đông Bắc<br /></td>
+                                                <td width="33%" id="tnw">西北<br /></td>
+                                                <td width="33%" id="tnt">北<br /></td>
+                                                <td width="33%" id="tne">東北<br /></td>
                                             </tr>
                                             <tr>
-                                                <td id="twt">Tây<br /></td>
-                                                <td id="tct">Trung<br /></td>
-                                                <td id="tet">Đông<br /></td>
+                                                <td id="twt">西<br /></td>
+                                                <td id="tct">中<br /></td>
+                                                <td id="tet">東<br /></td>
                                             </tr>
                                             <tr>
-                                                <td id="tsw">Tây Nam<br /></td>
-                                                <td id="tst">Nam<br /></td>
-                                                <td id="tse">Đông Nam<br /></td>
+                                                <td id="tsw">西南<br /></td>
+                                                <td id="tst">南<br /></td>
+                                                <td id="tse">東南<br /></td>
                                             </tr>
                                         </table>
                                         <div class="content_table">
                                             <div id="explain2">
                                                 <div class="table_note_red">
                                                     <hr>
-                                                    <span>Màu đỏ là cát vị.</span>
+                                                    <span>紅色為吉位</span>
                                                 </div>
                                                 <div class="table_note_blue">
                                                     <hr>
-                                                    <span>Màu xanh nhạt là hung vị.</span>
+                                                    <span>淺藍色為凶位</span>
                                                 </div>
                                             </div>
                                         </div>
                         </div>
                     </div>
+                    <div class="col-xs-12 col-sm-2 col-md-1"></div>
 
                 </div>
             </div>
@@ -251,9 +259,9 @@
                 <div class="footer_center">
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="row">
-                            <h4>NHÀ PHONG THỦY</h4>
+                            <h4>风水屋</h4>
                             <div class="footer_address">
-
+                                <p>Glorious Creation Vietnam Limited</p>
                             </div>
                         </div>
                     </div>
@@ -261,7 +269,7 @@
                 <div class="footer_right">
                     <div class="col-xs-12 col-sm-4 col-md-4">
                         <div class="row">
-                            <h4>八宅风水</h4>
+                            <h4>风水屋</h4>
                             <div class="footer_address">
 
                             </div>

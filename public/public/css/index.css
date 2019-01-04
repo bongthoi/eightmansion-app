@@ -4,7 +4,7 @@ body {
     
 }
 .background-image{
-    background-image: url("/assets/images/BAT_TRACH_PHONG_THUY.png");
+    background-image: url("../../assets/images/BAT_TRACH_PHONG_THUY.png");
 }
 .container{
     padding-right:0px !important;
@@ -22,6 +22,13 @@ header img {
 }
 .navbar-inverse {
     border: none;
+}
+.navbar-right {
+    margin-right: 0;
+    margin-left: 0;
+}
+.navbar-inverse li {
+    font-size: 16px;
 }
 .content_Feng_Shui .cl {
     margin-left: 3px;
@@ -96,6 +103,9 @@ select:focus, button:focus {
 .form-group {
     line-height: 40px;
 }
+.form-group p, td {
+    font-size: 15px;
+}
 .form-control {
     height: 20px;
     width: 248px;
@@ -107,7 +117,16 @@ select:focus, button:focus {
 }
 
 @media only screen and (max-width: 700px) {
-    .content_right_img img {
+    /* .content_right_img img {
         display: none;
+    } */
+    .background-image {
+        background-image: none;
     }
+  }
+  
+  
+  .flag a{
+	  padding:0px !important;
+	  
   }
